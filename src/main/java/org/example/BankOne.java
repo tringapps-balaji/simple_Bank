@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 
 
- public class Bank_one{
+ public class BankOne{
     Logger lg = Logger.getLogger("bank_one");
     int number;
     int bal=0;
@@ -15,7 +15,7 @@ import java.util.logging.Logger;
     String name;
     Scanner sc = new Scanner (System.in);
 
-    public Bank_one(int no, String name) {
+    public BankOne(int no, String name) {
         this.number = no;
         this.name = name;
         lg.log(Level.INFO,()->"Number : "+this.number);
@@ -36,7 +36,7 @@ import java.util.logging.Logger;
 
     }
   public  void balance (){
-       lg.info("Current balance is : "+bal);
+      lg.log(Level.INFO,()->"Number : "+this.bal);
     }
 
 

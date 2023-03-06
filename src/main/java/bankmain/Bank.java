@@ -1,6 +1,6 @@
 package bankmain;
 
-import org.example.Bank_one;
+import org.example.BankOne;
 
 import java.util.Scanner;
 import java.util.logging.Logger;
@@ -16,7 +16,7 @@ public class Bank
         num = bn.nextInt();
        lg.info("Enter the name : ");
         String name =bn.next();
-        Bank_one obj = new Bank_one(num,name);
+        BankOne obj = new BankOne(num,name);
 
         while (ch<4){
            lg.info("1.Deposit / 2. Withdrawel / 3. current balance / 4.exit");
