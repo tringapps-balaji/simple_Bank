@@ -1,11 +1,12 @@
 package org.example;
 
 import java.util.*;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
 
- public class bank_one{
+ public class Bank_one{
     Logger lg = Logger.getLogger("bank_one");
     int number;
     int bal=0;
@@ -14,9 +15,11 @@ import java.util.logging.Logger;
     String name;
     Scanner sc = new Scanner (System.in);
 
-    public bank_one(int no, String name) {
+    public Bank_one(int no, String name) {
         this.number = no;
         this.name = name;
+        lg.log(Level.INFO,()->"Number : "+this.number);
+        lg.log(Level.INFO,()->"Name : "+this.name);
     }
 
  public void deposit(){
@@ -33,7 +36,7 @@ import java.util.logging.Logger;
 
     }
   public  void balance (){
-       lg.info("Current balance: "+bal);
+       lg.info("Current balance is : "+bal);
     }
 
 
