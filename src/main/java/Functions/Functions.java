@@ -77,9 +77,9 @@ public class Functions {
                  acc = sc.nextInt();
                 if(hmap.containsKey(acc))
                 {
-                     //   BankOne bank = new BankOne();
-                       lg.log(Level.INFO,()->"The account is :"+hmap.values());
-                     //   bank.print();
+                    
+                 lg.log(Level.INFO,()->"The account is :"+hmap.values());
+                     
                 }
                 else{
                         lg.info("Invalid account");
