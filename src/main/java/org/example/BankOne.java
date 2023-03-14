@@ -1,45 +1,19 @@
 package org.example;
+public class BankOne{
+    private int number;
+    private int bal=0;
+    private String name;
 
-import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-
-
- public class BankOne{
-    Logger lg = Logger.getLogger("bank_one");
-    int number;
-    int bal=0;
-    int deposit;
-    int withdrawel;
-    String name;
-    Scanner sc = new Scanner (System.in);
-
-    public BankOne(int no, String name) {
+    public  BankOne(int no, String name,int balance) {
         this.number = no;
         this.name = name;
-        lg.log(Level.INFO,()->"Number : "+this.number);
-        lg.log(Level.INFO,()->"Name : "+this.name);
+        this.bal = balance;
     }
 
- public void deposit(){
-
-       lg.info("Enter the deposit : ");
-        deposit = sc.nextInt();
-        bal=bal+deposit;
+    public String toString()
+    {
+         return"\nName : "+name+"\t Account Number : "+number+"\t Balance : "+bal;
     }
-  public   void withdrawel(){
-
-            lg.info("Enter the withdrawel : ");
-            withdrawel = sc.nextInt();
-            bal=bal-withdrawel;
-
-    }
-  public  void balance (){
-      lg.log(Level.INFO,()->"Number : "+this.bal);
-    }
-
-
 }
 
 
